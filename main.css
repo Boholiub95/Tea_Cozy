@@ -1,3 +1,95 @@
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-text-color: seashell;
+  --main-bg-color: black;
+  --full-width: 100%;
+  --headerH: 80px;
+}
+
+html {
+  scroll-padding-top: var(--headerH);
+}
+
+/* MAIN STYLES */
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  margin: 0;
+  font-size: 22px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0.7rem 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* NAVIGATION */
+
+.header {
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--main-bg-color);
+  width: var(--full-width);
+}
+
+.nav-header {
+  height: var(--headerH);
+  width: var(--full-width);
+}
+
+.logo {
+  max-height: 10vh;
+  padding-left: 1rem;
+}
+
+.nav-toggle {
+  margin-right: 1rem;
+}
+
+.nav-links {
+  width: var(--full-width);
+  padding: 0;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+
+.link {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5em;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.show-links {
+  height: 240px;
+}
