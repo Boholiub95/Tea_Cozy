@@ -93,3 +93,74 @@ p {
 .show-links {
   height: 240px;
 }
+/* MAIN SECTION */
+
+.main {
+  padding-top: var(--headerH);
+}
+
+/* MISSION SECTION */
+
+#mission {
+  min-height: 70vh;
+  background-image: url('./images/img-mission-background.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+.mission-content {
+  width: 80vw;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+  padding: 2rem 1.2rem;
+  outline: 2px solid seashell;
+  outline-offset: -15px;
+  font-size: 0.8em;
+}
+
+/* TEA OF THE MONTH */
+
+#tea-of-the-month {
+  flex-direction: column;
+  margin: auto;
+}
+
+.items {
+  flex-direction: column;
+}
+
+.item img {
+  max-height: 50vh;
+  max-width: 70vw;
+}
+
+/* LOCATIONS SECTION */
+
+#locations {
+  margin-top: 1rem;
+  background-image: url('./images/img-locations-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-flow: column;
+}
+
+#locations h2 {
+  color: black;
+  padding-top: 2rem;
+}
+
+.location {
+  text-align: center;
+  padding-bottom: 1rem;
+  height: auto;
+}
+
+.address {
+  flex-flow: column;
+  max-width: 80%;
+  background: black;
+  margin: 1em auto;
+  padding: 1em 0;
+}
